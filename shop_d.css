@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.heading {
+  background-color: rgb(41, 102, 102);
+  width: auto;
+  display: flex;
+  position: sticky;
+  top: 1px;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  border-radius: 50px;
+}
+
+.link {
+  display: flex;
+  justify-items: center;
+  margin-top: 50px;
+  gap: 90px;
+  padding-right: 20px;
+}
+
+.link a {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  transform: scale(1.1);
+  color: rgb(48, 178, 211);
+}
+
+.container {
+  background-color: rgb(196, 130, 130);
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  gap: 30px;
+  border-radius: 18px;
+}
+
+.container1 {
+  background-color: rgb(127, 216, 135);
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 20px;
+  margin-top: 25px;
+  gap: 30px;
+  border-radius: 18px;
+}
+.btn{
+  background-color: black; 
+  color: aliceblue;
+  font-weight: bold;
+  border-radius: 45px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn:hover{
+  background-color: antiquewhite;
+  color: blue;
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px white;
+}
+
+.container2 {
+  background-color: rgb(126, 226, 221);
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 20px;
+  margin-top: 25px;
+  gap: 30px;
+  border-radius: 18px;
+}
+
+.container3 {
+  background-color: rgb(236, 157, 232);
+  display: flex;
+  justify-content: space-around;
+  justify-items: center;
+  padding: 20px;
+  margin-top: 25px;
+  gap: 30px;
+  border-radius: 18px;
+}
+
+.end {
+  background-color: rgb(67, 112, 112);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.main-div {
+  display: flex;
+  gap: 50px;
+}
+
+.main-div a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.home {
+  background-image: url(img/wd3.jpg);
+  background-size: cover;
+  width: auto;
+  color: rgb(255, 255, 255);
+  font-style: italic;
+  font-size: 25px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.box {
+  background-color: rgb(168, 168, 168);
+  padding: 20px;
+  border: 1px solid;
+  height: 150px;
+  width: 300px;
+  border-radius: 30px;
+  gap: 20px;
+  cursor: pointer;
+  transition: 1.3s;
+}
+.box:hover{
+  transform: scale(1.1);
+  box-shadow:0 10px 20px rgba(0,0,0,0,3);
+}
+
+.foot {
+  background-color: rgb(26, 83, 83);
+  padding: 20px;
+  color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+}
+
+.foot1 p {
+  font-size: 25px;
+  font-style: italic;
+}
+
+.foot2 a {
+  display: flex;
+  justify-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: antiquewhite;
+  font-size: 25px;
+  font-style: italic;
+}
+
+.foot3 a {
+  display: flex;
+  justify-items: center;
+  text-decoration: none;
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+
+/* about */
+.navbar {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  padding: 35px;
+  margin: 0;
+  color: antiquewhite;
+  font-size: 25px;
+}
+
+/* galary */
+.side-bar {
+  position: fixed;
+  top: 120px;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: cadetblue;
+  color: rgb(9, 94, 121);
+  overflow: auto;
+  height: 100vh;
+}
+
+.side-bar h2 {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.side-bar a {
+  display: block;
+  text-decoration: none;
+  color: antiquewhite;
+  padding: 20px;
+
+}
+
+.side-bar a:hover {
+  background-color: rgb(31, 123, 151);
+  color: blue;
+}
+
+.main-class {
+  position: fixed;
+  top: 120px;
+  left: 250px;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sub-class {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.card {
+  background-color: rgb(134, 214, 148);
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1.3s;
+}
+.card:hover{
+  transform: scale(1.1);
+}
+
+.card p {
+  text-align: center;
+}
+/* service */
+.osh{
+  font-size:60px;
+  font-weight: bold;
+  color: green;
+  padding-left: 500px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.s-main{
+  display: flex;
+}
+.s-main h2{
+  font-size: 50px;
+  color:blue;
+  padding: 15px;
+}
+.s-main p{
+  font-size: 21px;
+  padding-left: 20px;
+}
